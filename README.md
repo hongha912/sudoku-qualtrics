@@ -13,8 +13,8 @@ These code and HTML snippets can help implement a Sudoku puzzle inside a Qualtri
 
 3.  Assuming that the Sudoku question was already created (if not, please create it), update it as follow:
 
-    - In the left panel make sure to set the "Question Type" as "Text/Graphic"
-    - "Content Type" can be "Text"
+    - In the left panel make sure to set the "Question Type" as "Text/Graphic". This is because we don't want Qualtrics inserting their own answer box.
+    - "Content Type" can be "Text".
 
       <img src="https://github.com/hongha912/sudoku-qualtrics/assets/67204151/0568ff73-8a76-45cf-83e4-b5e3eae39317" alt="question settings" width="300"/>
       
