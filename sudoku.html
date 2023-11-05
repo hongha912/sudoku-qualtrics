@@ -1,0 +1,144 @@
+<div class="container">
+<h1>Please complete the following Sudoku puzzle</h1>
+<p>Any instruction here</p>
+
+<style type="text/css">
+
+      #sudoku-puzzle {
+        border: 2px solid #000000 !important;
+      }
+
+      #sudoku-puzzle td {
+        border: 1px solid #000000 !important;
+        text-align: center !important;
+        vertical-align: middle !important;  
+      }
+
+      #sudoku-puzzle input {
+        color: #000000 !important;
+        padding: 0 !important;
+        border: 0 !important;
+        text-align: center !important;
+        width:48px !important;
+        height: 48px !important;
+        font-size: 24px !important;
+        background-color: #FFFFFF !important;
+        outline: none !important;
+      }
+
+      #sudoku-puzzle input:disabled {
+        background-color: #d3d3d3 !important;
+      }
+
+      #sudoku-puzzle .topRow  { border-top:    2px solid #000000 !important; }
+      #sudoku-puzzle .rightCol { border-right:  2px solid #000000 !important; }
+      #sudoku-puzzle .bottomRow { border-bottom: 2px solid #000000 !important; }
+      #sudoku-puzzle .leftCol { border-left:   2px solid #000000 !important; }
+
+      #sudoku-puzzle input:not(:disabled) {color: blue !important;}
+</style>
+<div class="container">
+<table id="sudoku-puzzle">
+ <tbody>
+  <tr>
+   <td><input id="col1-row1" type="number" min="1" max="9" class="topRow leftCol" disabled="disabled" value="5" /></td>
+   <td><input id="col2-row1" type="number" min="1" max="9" class="topRow" disabled="disabled" value="3" /></td>
+   <td><input id="col3-row1" type="number" min="1" max="9" class="topRow rightCol" /></td>
+   <td><input id="col4-row1" type="number" min="1" max="9" class="topRow leftCol" /></td>
+   <td><input id="col5-row1" type="number" min="1" max="9" class="topRow" disabled="disabled" value="7" /></td>
+   <td><input id="col6-row1" type="number" min="1" max="9" class="topRow rightCol" /></td>
+   <td><input id="col7-row1" type="number" min="1" max="9" class="topRow leftCol" /></td>
+   <td><input id="col8-row1" type="number" min="1" max="9" class="topRow" /></td>
+   <td><input id="col9-row1" type="number" min="1" max="9" class="topRow rightCol" /></td>
+  </tr>
+  <tr>
+   <td><input id="col1-row2" type="number" min="1" max="9" class="leftCol" disabled="disabled" value="6" /></td>
+   <td><input id="col2-row2" type="number" min="1" max="9" /></td>
+   <td><input id="col3-row2" type="number" min="1" max="9" class="rightCol"/></td>
+   <td><input id="col4-row2" type="number" min="1" max="9" class="leftCol" disabled="disabled" value="1" /></td>
+   <td><input id="col5-row2" type="number" min="1" max="9" disabled="disabled" value="9" /></td>
+   <td><input id="col6-row2" type="number" min="1" max="9" class="rightCol"disabled="disabled" value="5" /></td>
+   <td><input id="col7-row2" type="number" min="1" max="9" class="leftCol" /></td>
+   <td><input id="col8-row2" type="number" min="1" max="9" /></td>
+   <td><input id="col9-row2" type="number" min="1" max="9" class="rightCol"/></td>
+  </tr>
+  <tr>
+   <td><input id="col1-row3" type="number" min="1" max="9" class="bottomRow leftCol" /></td>
+   <td><input id="col2-row3" type="number" min="1" max="9" class="bottomRow" disabled="disabled" value="9" /></td>
+   <td><input id="col3-row3" type="number" min="1" max="9" class="bottomRow rightCol" disabled="disabled" value="8" /></td>
+   <td><input id="col4-row3" type="number" min="1" max="9" class="bottomRow leftCol" /></td>
+   <td><input id="col5-row3" type="number" min="1" max="9" class="bottomRow" /></td>
+   <td><input id="col6-row3" type="number" min="1" max="9" class="bottomRow rightCol" /></td>
+   <td><input id="col7-row3" type="number" min="1" max="9" class="bottomRow leftCol" /></td>
+   <td><input id="col8-row3" type="number" min="1" max="9" class="bottomRow" disabled="disabled" value="6" /></td>
+   <td><input id="col9-row3" type="number" min="1" max="9" class="bottomRow rightCol" /></td>
+  </tr>
+  <tr>
+   <td><input id="col1-row4" type="number" min="1" max="9" class="topRow leftCol" disabled="disabled" value="8" /></td>
+   <td><input id="col2-row4" type="number" min="1" max="9" class="topRow" /></td>
+   <td><input id="col3-row4" type="number" min="1" max="9" class="topRow rightCol" /></td>
+   <td><input id="col4-row4" type="number" min="1" max="9" class="topRow leftCol" /></td>
+   <td><input id="col5-row4" type="number" min="1" max="9" class="topRow" disabled="disabled" value="6" /></td>
+   <td><input id="col6-row4" type="number" min="1" max="9" class="topRow rightCol" /></td>
+   <td><input id="col7-row4" type="number" min="1" max="9" class="topRow leftCol" /></td>
+   <td><input id="col8-row4" type="number" min="1" max="9" class="topRow" /></td>
+   <td><input id="col9-row4" type="number" min="1" max="9" class="topRow rightCol" disabled="disabled" value="3" /></td>
+  </tr>
+  <tr>
+   <td><input id="col1-row5" type="number" min="1" max="9" class="leftCol"disabled="disabled" value="4" /></td>
+   <td><input id="col1-row5" type="number" min="1" max="9" /></td>
+   <td><input id="col1-row5" type="number" min="1" max="9" class="rightCol"/></td>
+   <td><input id="col1-row5" type="number" min="1" max="9" class="leftCol"disabled="disabled" value="8" /></td>
+   <td><input id="col1-row5" type="number" min="1" max="9" /></td>
+   <td><input id="col1-row5" type="number" min="1" max="9" class="rightCol"disabled="disabled" value="3" /></td>
+   <td><input id="col1-row5" type="number" min="1" max="9" class="leftCol"/></td>
+   <td><input id="col1-row5" type="number" min="1" max="9" /></td>
+   <td><input id="col1-row5" type="number" min="1" max="9" class="rightCol"disabled="disabled" value="1" /></td>
+  </tr>
+  <tr>
+   <td><input id="col1-row6" type="number" min="1" max="9" class="bottomRow leftCol" disabled="disabled" value="7" /></td>
+   <td><input id="col1-row6" type="number" min="1" max="9" class="bottomRow" /></td>
+   <td><input id="col1-row6" type="number" min="1" max="9" class="bottomRow rightCol" /></td>
+   <td><input id="col1-row6" type="number" min="1" max="9" class="bottomRow leftCol" /></td>
+   <td><input id="col1-row6" type="number" min="1" max="9" class="bottomRow" disabled="disabled" value="2" /></td>
+   <td><input id="col1-row6" type="number" min="1" max="9" class="bottomRow rightCol" /></td>
+   <td><input id="col1-row6" type="number" min="1" max="9" class="bottomRow leftCol" /></td>
+   <td><input id="col1-row6" type="number" min="1" max="9" class="bottomRow" /></td>
+   <td><input id="col1-row6" type="number" min="1" max="9" class="bottomRow rightCol" disabled="disabled" value="6" /></td>
+  </tr>
+  <tr>
+   <td><input id="col1-row7" type="number" min="1" max="9" class="topRow leftCol" /></td>
+   <td><input id="col1-row7" type="number" min="1" max="9" class="topRow" disabled="disabled" value="6" /></td>
+   <td><input id="col1-row7" type="number" min="1" max="9" class="topRow rightCol" /></td>
+   <td><input id="col1-row7" type="number" min="1" max="9" class="topRow leftCol" /></td>
+   <td><input id="col1-row7" type="number" min="1" max="9" class="topRow" /></td>
+   <td><input id="col1-row7" type="number" min="1" max="9" class="topRow rightCol" /></td>
+   <td><input id="col1-row7" type="number" min="1" max="9" class="topRow leftCol" disabled="disabled" value="2" /></td>
+   <td><input id="col1-row7" type="number" min="1" max="9" class="topRow" disabled="disabled" value="8" /></td>
+   <td><input id="col1-row7" type="number" min="1" max="9" class="topRow rightCol" /></td>
+  </tr>
+  <tr>
+   <td><input id="col1-row8" type="number" min="1" max="9" class="leftCol"/></td>
+   <td><input id="col1-row8" type="number" min="1" max="9" /></td>
+   <td><input id="col1-row8" type="number" min="1" max="9" class="rightCol"/></td>
+   <td><input id="col1-row8" type="number" min="1" max="9" class="leftCol"disabled="disabled" value="4" /></td>
+   <td><input id="col1-row8" type="number" min="1" max="9" disabled="disabled" value="1" /></td>
+   <td><input id="col1-row8" type="number" min="1" max="9" class="rightCol"disabled="disabled" value="9" /></td>
+   <td><input id="col1-row8" type="number" min="1" max="9" class="leftCol"/></td>
+   <td><input id="col1-row8" type="number" min="1" max="9" /></td>
+   <td><input id="col1-row8" type="number" min="1" max="9" class="rightCol" disabled="disabled" value="5" /></td>
+  </tr>
+  <tr>
+   <td><input id="col1-row9" type="number" min="1" max="9" class="bottomRow leftCol" /></td>
+   <td><input id="col1-row9" type="number" min="1" max="9" class="bottomRow" /></td>
+   <td><input id="col1-row9" type="number" min="1" max="9" class="bottomRow rightCol" /></td>
+   <td><input id="col1-row9" type="number" min="1" max="9" class="bottomRow leftCol" /></td>
+   <td><input id="col1-row9" type="number" min="1" max="9" class="bottomRow" disabled="disabled" value="8" /></td>
+   <td><input id="col1-row9" type="number" min="1" max="9" class="bottomRow rightCol" /></td>
+   <td><input id="col1-row9" type="number" min="1" max="9" class="bottomRow leftCol" /></td>
+   <td><input id="col1-row9" type="number" min="1" max="9" class="bottomRow" disabled="disabled" value="7" /></td>
+   <td><input id="col1-row9" type="number" min="1" max="9" class="bottomRow rightCol" disabled="disabled" value="9" /></td>
+  </tr>
+ </tbody>
+</table>
+</div>
