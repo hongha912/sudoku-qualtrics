@@ -37,7 +37,7 @@ These code and HTML snippets can help implement a Sudoku puzzle inside a Qualtri
 
 6.  This should be enough to get the sudoku puzzle recorded in the response. Try to Preview, then type in some responses. Then, go to the "Data & Analysis" tab > "Export & Import" > "Export Data..." > "Download". The 2 new embedded fields should appear as 2 new columns.
     - `PercentageCorrectAnswers` shows the percentage of correct answers the respondent manages to fill in, with value ranging from 0(%) to 100(%).
-    - `SudokuAnswers` records the actual answer of the user in the format of a JSON object. It should be self-explanatory, but an online formatter can help with readability. I'm assuming that you don't actually need this directly, other than for recording and troubleshooting purposes.
+    - `SudokuAnswers` records the actual answer of the user in the format of a JSON object. It should be self-explanatory, but an online formatter can help with readability. I'm assuming that you don't actually need this directly, other than for recording and troubleshooting purposes. However, the script can certainly be modified to record every answer as a separate column.
 
 ## Caveats
 
