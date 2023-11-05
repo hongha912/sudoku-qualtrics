@@ -1,5 +1,7 @@
 # sudoku-qualtrics
-Implement a Sudoku puzzle in a Qualtrics survey.
+Implement a Sudoku puzzle in a Qualtrics surve, e.g:
+
+<img src="https://github.com/hongha912/sudoku-qualtrics/assets/67204151/9e5378ba-0013-4576-a648-df18850445f8" alt="sudoku puzzle" width="500"/>
 
 These code and HTML snippets can help implement a Sudoku puzzle inside a Qualtrics survey and record the survey respondent's responses.
 
