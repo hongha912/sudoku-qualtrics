@@ -31,7 +31,7 @@ These code and HTML snippets can help implement a Sudoku puzzle inside a Qualtri
       ![unnamed](https://github.com/hongha912/sudoku-qualtrics/assets/67204151/ad5493c8-dc14-4be8-968c-6af32eb7960d)
     
     - Click on the green "Add a New Element Here" button at the bottom of the workflow, select "Embedded Data"
-    - Inside this block, create new fields. These should be named `SudokuAnswers` and `PercentageCorrectAnswers` precisely.
+    - Inside this block, create 2 new fields, named `SudokuAnswers` and `PercentageCorrectAnswers` respectively.
     - Once done, move the embedded data block to before the block where the sudoku question is included.
     - Click "Apply" (bottom right corner of the screen)
 
